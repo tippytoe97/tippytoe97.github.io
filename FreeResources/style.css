@@ -63,23 +63,65 @@ body {
     font-weight: 600;
    }
 
-   .free {
+  #free {
+    margin-top: 50px;
     display: flex;
-   }
+    align-items: center;
+  }
 
    .col {
-    flex: 50%;
-    padding: 10px;
-    height: 300px;
+    width: 50%;
    }
 
-   .col img {
-    width: 100%;
-   }
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
    .free-text {
-    padding-top: 5%;
-    padding-left: 20px;
+    padding-left: 50px;
    }
 
    .col h3 {
@@ -87,7 +129,7 @@ body {
    }
 
    .col p {
-    width: 90%;
+    width: 95%;
    }
 
    .col button {
@@ -102,6 +144,46 @@ body {
       }
       
     .col button:hover {
+        background-color: rgb(167, 146, 146);
+        color: white;
+        border: white;
+      }
+
+      .newsletter {
+        margin-top: 100px;
+        padding: 100px;
+        background-image: url(../images/bg.png);
+        text-align: center;
+      }
+      
+      .newsletter h2 {
+        background: transparent;
+        font-size: 36px;
+        font-weight: 500;
+        padding-bottom: 15px;
+      }
+      
+      .newsletter h4 {
+        padding-top: 20px;
+        background: transparent;
+      }
+      
+      .newsletter p {
+        padding-top: 20px;
+        background: transparent;
+      }
+      
+      .newsletter button {
+        font-size: 15px;
+        width: 395px;
+        height: 50px;
+        border-radius: 20px;
+        margin-top: 40px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+      }
+      
+      .newsletter button:hover {
         background-color: rgb(167, 146, 146);
         color: white;
         border: white;
