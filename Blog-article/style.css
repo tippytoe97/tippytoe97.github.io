@@ -5,5 +5,44 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif; margin:0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic Antique';
+    background-color: #E9E7E7;
 }
+
+.logo {
+    margin: 0 20px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    padding: 30px 3%;
+  }
+  
+  .navbar {
+    list-style: none;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  
+  .navbar li a {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .navbar li a:hover {
+    color: rgb(177, 158, 135);
+  }
