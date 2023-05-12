@@ -46,3 +46,30 @@ body {
   .navbar li a:hover {
     color: rgb(177, 158, 135);
   }
+
+  .text {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  h2.splitting {
+    color: saturate(lighten(#182952,55%),60%);
+    .char {
+      transition: transform .3s cubic-bezier(.3, 0, .3, 1), opacity .3s linear;
+      transition-delay: calc( 20ms * var(--char-index) );
+  
+    }
+  
+    &[data-scroll="out"] .char {
+      opacity: 0.1;
+      transform: translateY( .25em );
+    }
+  }
+  
+
+  .cover-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
