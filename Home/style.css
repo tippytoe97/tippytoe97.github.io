@@ -44,24 +44,44 @@ header {
   color: rgb(177, 158, 135);
 }
 
+.intro-img {
+  height: 550px;
+  display: flex;
+}
+
+.intro-img img{
+  height: 100%;
+  padding-right: 1.25%;
+}
+
 .intro {
-  padding-left: 80px;
-  padding-top: 120px;
-  width: 50%;
+  background-color: #FCFAFA;
+  padding: 30px;
+  width: 400px;
+  position: absolute;
+  top: 40%;
+  right: 40px;
 }
 
 .intro h1 {
-  font-size: 40px;
+  background-color: transparent;
+  font-size: 30px;
   font-weight: 500;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .intro p {
-  margin-right: 30%;
+  width: 90%;
+  background-color: transparent;
   font-size: 18px;
 }
 
+.social {
+  background-color: #FCFAFA;
+}
+
 .social a {
+  background-color: transparent;
   padding-top: 40px;
   display: inline-block;
   position: relative;
@@ -70,31 +90,32 @@ header {
   text-decoration: none;
 }
 
-.cover {
-  float: right;
-  width: 45%;
-  height: 850px;
-  margin-top: -150px;
-  object-fit: cover;
+.journey {
+  margin-top: 100px;
+}
+
+.journey h2{
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
 }
 
 .pillar {
   width: 100%;
-  padding-top: 120px;
   display: flex;
   align-items: flex-start;
 }
 
 .col {
-  width: 30%;
-  padding-left: 80px;
+  width: 40%;
+  padding-left: 30px;
   padding-right: 3%;
   display: inline-block;
 }
 
 .col h2 {
   padding-bottom: 15px;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
 }
 
@@ -122,7 +143,7 @@ header {
 }
 
 .freedl h1 {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 18px;
   font-weight: lighter;
   font-size: 40px;
