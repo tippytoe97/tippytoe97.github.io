@@ -45,7 +45,7 @@ header {
 }
 
 .intro-img {
-  height: 550px;
+  height: 600px;
   display: flex;
 }
 
@@ -56,8 +56,8 @@ header {
 
 .intro {
   background-color: #FCFAFA;
-  padding: 30px;
-  width: 400px;
+  padding: 50px;
+  width: 450px;
   position: absolute;
   top: 40%;
   right: 40px;
@@ -65,7 +65,7 @@ header {
 
 .intro h1 {
   background-color: transparent;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 500;
   padding-bottom: 50px;
 }
@@ -97,6 +97,7 @@ header {
 .journey h2{
   font-size: 40px;
   text-align: center;
+  font-weight: 500;
   padding: 40px;
 }
 
@@ -137,9 +138,8 @@ header {
 }
 
 .freedl img {
-  border-radius: 2%;
-  padding-left: 15%;
-  height: 90%;
+  height: 60%;
+  margin-left: 5%;
 }
 
 .freedl h1 {
@@ -152,7 +152,6 @@ header {
 .freedl p {
   font-size: 18px;
   padding-top: 18px;
-  width: 530px;
 }
 
 .freedl h4 {
@@ -291,4 +290,81 @@ header {
   background-color: #F5F3F2;
 }
 
+/* || small */
+@media screen and (max-width: 576px) {
 
+  .navbar {
+    display: none;
+  }
+
+  .intro-img {
+    height: 300px;
+    display: block;
+  }
+  
+  .intro-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.intro {
+  background-color: #FCFAFA;
+  padding: 50px;
+  display: block;
+}
+
+.intro h1 {
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.intro p {
+  width: 90%;
+  background-color: transparent;
+  font-size: 15px;
+}
+
+.social {
+  background-color: #FCFAFA;
+}
+
+.social a {
+  background-color: transparent;
+  padding-top: 40px;
+  display: inline-block;
+  position: relative;
+  margin: 0 10px;
+  color: black;
+  text-decoration: none;
+}
+}
+
+/* || large */
+@media screen and (min-width: 1400px) {
+  .intro-img {
+    height: 900px;
+    display: flex;
+  }
+  
+  .intro-img img{
+    height: 100%;
+    padding-right: 1.25%;
+  }
+  
+  .intro {
+    background-color: #FCFAFA;
+    padding: 60px;
+    width: 500px;
+    position: absolute;
+    top: 40%;
+    right: 80px;
+  }
+  
+  .freedl img {
+    height: 70%;
+    margin-left: 15%;
+  }
+
+  }
